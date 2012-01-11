@@ -1,0 +1,21 @@
+{
+  "name": "resty",
+  "description": "Build quick and simple RESTfull APIs using Node.js and connect",
+  "keywords": ["rest", "node", "connect", "simple"],
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/SoapyIllusions/resty"
+  },
+  "author": "Alex Angelini <alex.louis.angelini@gmail.com>",
+  "main": "resty",
+  "engines": {
+    "node": ">=0.4.10"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/SoapyIllusions/resty/raw/master/LICENSE"
+    }
+  ]
+}
