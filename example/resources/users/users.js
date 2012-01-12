@@ -10,6 +10,6 @@ var Users = {
       callback(null, {all: 'users'});
     }
   }
-}
+};
 
 module.exports = Users;
