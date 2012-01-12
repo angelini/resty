@@ -28,6 +28,16 @@ vows.describe('Read Resources').addBatch({
     '_main.Resource get should be a function': function(resources) {
       assert.equal(typeof resources.users._main.Resource.get, 'function');
     }
+  },
+
+  'Read an invalid resource folder': {
+    topic: function() {
+      return readResources(__dirname + '/does/not/exist');
+    },
+
+    'should return an Error object': function(resources) {
+      assert.equal(resources.code, 'ENOENT');
+    }
   }
 })['export'](module);
 
