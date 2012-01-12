@@ -12,6 +12,11 @@
   "engines": {
     "node": ">=0.4.10"
   },
+  "devDependencies": {
+    "connect": ">= 1.8.5",
+    "vows": ">= 0.6.1",
+    "request": ">= 2.9.3"
+  },
   "licenses": [
     {
       "type": "MIT",
