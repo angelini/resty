@@ -26,6 +26,17 @@ vows.describe('Using connect').addBatch({
     }
   },
 
+  'testing extra slash on Collection get request': {
+    'topic': function() {
+      request(BASE_URL + '/users/', this.callback);
+    },
+
+    'should contain {all: "users"}': function(err, res, body) {
+      assert.isNull(err);
+      assert.equal(JSON.parse(body).all, 'users');
+    }
+  },
+
   'testing Resource get request': {
     'topic': function() {
       request(BASE_URL + '/users/123', this.callback);
