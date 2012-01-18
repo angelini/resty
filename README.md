@@ -20,7 +20,7 @@ Simply require the middleware and tell connect to use it:
     var resty = require('resty');
 
     var app = connect.createServer();
-    app.use(resty('/path/to/resources/folder'));
+    app.use(resty.middleware('/path/to/resources/folder'));
     app.listen(8080);
 
 Remember to add middleware for authentication and file serving, as resty only provides the routing for the API resources.
