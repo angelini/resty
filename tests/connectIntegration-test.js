@@ -22,7 +22,7 @@ vows.describe('Using connect').addBatch({
 
     'should contain {all: "users"}': function(err, res, body) {
       assert.isNull(err);
-      assert.equal(JSON.parse(body).all, 'users');
+      assert.equal(body.all, 'users');
     }
   },
 
@@ -33,7 +33,7 @@ vows.describe('Using connect').addBatch({
 
     'should contain {all: "users"}': function(err, res, body) {
       assert.isNull(err);
-      assert.equal(JSON.parse(body).all, 'users');
+      assert.equal(body.all, 'users');
     }
   },
 
@@ -44,7 +44,7 @@ vows.describe('Using connect').addBatch({
 
     'should contain {uid: 123}': function(err, res, body) {
       assert.isNull(err);
-      assert.equal(JSON.parse(body).uid, '123');
+      assert.equal(body.uid, '123');
     }
   },
 
@@ -54,8 +54,6 @@ vows.describe('Using connect').addBatch({
     },
 
     'should contain a uid and cid': function(err, res, body) {
-      body = JSON.parse(body);
-
       assert.isNull(err);
       assert.equal(body.uid, '123');
       assert.equal(body.cid, '456');
@@ -69,7 +67,7 @@ vows.describe('Using connect').addBatch({
 
     'should have accessed the querystring': function(err, res, body) {
       assert.isNull(err);
-      assert.equal(JSON.parse(body).query.hello, 'world');
+      assert.equal(body.query.hello, 'world');
     }
   },
 
@@ -87,7 +85,7 @@ vows.describe('Using connect').addBatch({
 
     'should have accessed the body': function(err, res, body) {
       assert.isNull(err);
-      assert.equal(JSON.parse(body).body.test, 'data');
+      assert.equal(body.body.test, 'data');
     }
   },
 
@@ -98,7 +96,7 @@ vows.describe('Using connect').addBatch({
 
     'should return Resource Not Found': function(err, res, body) {
       assert.isNull(err);
-      assert.equal(JSON.parse(body).error, 'Resource Not Found');
+      assert.equal(body.error, 'Resource Not Found');
     }
   },
 
@@ -116,7 +114,7 @@ vows.describe('Using connect').addBatch({
 
     'should return Method Not Found': function(err, res, body) {
       assert.isNull(err);
-      assert.equal(JSON.parse(body).error, 'Method Not Found');
+      assert.equal(body.error, 'Method Not Found');
     }
   }
 })['export'](module);
