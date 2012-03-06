@@ -1,4 +1,4 @@
-# Resty [![Build Status](https://secure.travis-ci.org/flatiron/api-easy.png)](http://travis-ci.org/SoapyIllusions/resty.png)
+# Resty [![Build Status](https://secure.travis-ci.org/SoapyIllusions/resty.png)](http://travis-ci.org/SoapyIllusions/resty.png)
 
 Build quick and simple RESTfull APIs using Node.js and connect
 
