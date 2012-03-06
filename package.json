@@ -2,7 +2,7 @@
   "name": "resty",
   "description": "Build quick and simple RESTfull APIs using Node.js and connect",
   "keywords": ["rest", "node", "connect", "simple"],
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": {
     "type": "git",
     "url": "git://github.com/SoapyIllusions/resty"
@@ -13,12 +13,12 @@
     "node": ">=0.4.10"
   },
   "scripts": {
-    "test": "vows ./tests/*"
+    "test": "node_modules/vows/bin/vows ./tests/*"
   },
   "devDependencies": {
-    "connect": ">= 1.8.5",
-    "vows": ">= 0.6.1",
-    "request": ">= 2.9.3"
+    "connect": "1.8.5",
+    "vows": "0.6.1",
+    "request": "2.9.3"
   },
   "licenses": [
     {
